@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta</h1>
+        <form method="POST">
+            <input type="text" name="query" placeholder="Digite seu pergunta" required>
+            <button type="submit">Buscar</button>
+        </form>
+        {% if resposta %}
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p>{{ resposta }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
