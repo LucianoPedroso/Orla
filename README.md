@@ -15,3 +15,5 @@ Executando a Aplicação
 
 Inicie o servidor Flask executando:
 python app.py
+
+OBS: Nesse case é preciso alterar a API Key, dos dois codigo app.py e ConstruindoBancoDados.py para alguma atualmente ativa. Por questão segurança publiquei o arquivo no git mais cancelei a API Key da OpenIA
